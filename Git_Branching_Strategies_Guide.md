@@ -54,7 +54,7 @@ git commit -m "Add profile image upload"
 # Merge back to develop
 git checkout develop
 git merge feature/user-profile-page
-git branch -d feature/user-profile-page
+git branch -d feature/user-profile-page // Deletes the local feature/user-profile-page branch. This removes the branch pointer, not the commits—they're preserved in the merge.
 ```
 
 #### 2. Release Process
@@ -401,4 +401,5 @@ The choice of branching strategy should align with:
 
 
 Understanding these strategies and their trade-offs demonstrates DevOps maturity and practical git knowledge essential for modern software development teams.
+
 
