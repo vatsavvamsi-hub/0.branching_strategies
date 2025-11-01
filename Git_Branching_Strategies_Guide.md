@@ -37,8 +37,11 @@ Git Flow uses **5 types of branches**:
 #### 1. Feature Development
 ```bash
 # Start from develop
-git checkout develop
-git pull origin develop
+git checkout develop // Switches your local branch to develop
+git pull origin develop // Fetches the latest changes from the remote develop branch and automatically merges them into your current local develop branch.
+
+Local branch (develop): On your machine, where you make commits.
+Remote branch (origin/develop): On the server (GitHub, GitLab, etc.), shared with your team.
 
 # Create feature branch
 git checkout -b feature/user-profile-page
@@ -398,3 +401,4 @@ The choice of branching strategy should align with:
 
 
 Understanding these strategies and their trade-offs demonstrates DevOps maturity and practical git knowledge essential for modern software development teams.
+
