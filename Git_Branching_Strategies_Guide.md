@@ -97,6 +97,14 @@ git checkout develop
 git merge hotfix/critical-security-fix
 git branch -d hotfix/critical-security-fix
 ```
+why do we merge release and hotfix branches back to develop ?
+
+To keep develop in sync with production changes:
+
+•  Release branches: Contain version bumps, final bug fixes, and documentation updates made during release preparation. Merging back ensures develop has these finalized changes.
+•  Hotfix branches: Fix critical bugs in production. Merging back to develop ensures the bug fix is included in the next release, preventing the bug from reappearing.
+
+Without merging back, develop would diverge from production and potentially reintroduce fixed bugs or miss important changes.
 
 ### Real-World Example: E-commerce Platform
 
@@ -401,5 +409,6 @@ The choice of branching strategy should align with:
 
 
 Understanding these strategies and their trade-offs demonstrates DevOps maturity and practical git knowledge essential for modern software development teams.
+
 
 
